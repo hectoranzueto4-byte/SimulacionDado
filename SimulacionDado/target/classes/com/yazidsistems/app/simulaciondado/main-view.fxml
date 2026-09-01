@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="30.0" prefHeight="350.0" prefWidth="300.0"
+      xmlns:fx="http://javafx.com"
+      fx:controller="com.yazidsistems.app.simulaciondado.controller.MainController">
+
+    <!-- Este Pane será el cuadrado blanco del dado -->
+    <Pane fx:id="panelDado" prefHeight="120.0" prefWidth="120.0" maxWidth="120.0" maxHeight="120.0"
+          style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 3; -fx-border-radius: 10; -fx-background-radius: 10;">
+    </Pane>
+
+    <Button fx:id="btnLanzar" text="Lanzar Dado" onAction="#onLanzarDadoClick">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Button>
+</VBox>
